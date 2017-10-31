@@ -10,6 +10,9 @@ file(GLOB_RECURSE SOURCES "*.cpp")
 add_definitions(-std=c++2a -g -Wall -Wextra)
 # add_definitions(-std=c++2a -g0 -w)
 
+INCLUDE_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR}/libraries)
+LINK_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR}/libraries)
+
 add_executable(${PROJECT_NAME} ${SOURCES})
 
 target_link_libraries(${PROJECT_NAME} pthread)
