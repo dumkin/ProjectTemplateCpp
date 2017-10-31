@@ -1,0 +1,34 @@
+AccessModifierOffset: 0 # Отклонение public и private
+AlignAfterOpenBracket: Align # Выравнивание аругментов с новой строки после открытой скобки ()
+AlignConsecutiveAssignments: true # Выравниевает равно последовательных присваиваний
+AlignEscapedNewlinesLeft: true # Выравнивание многострочного define
+AlignOperands: true # ВЫравнивание после равно
+AlignTrailingComments: true # Выравнивание коментариев
+AllowAllParametersOfDeclarationOnNextLine: true # Разрешить все параметры на новой строке
+AllowShortBlocksOnASingleLine: false # Запретить однострочные условия
+AllowShortFunctionsOnASingleLine: None # Запретить однострочные функции
+AlwaysBreakAfterReturnType: None # Название на той же строке с типом возрата
+AlwaysBreakBeforeMultilineStrings: false # Без новой строки после равно
+AlwaysBreakTemplateDeclarations: true # Шаблон на новой строке
+BinPackArguments: false # Каждый аргумент с новой строки
+BinPackParameters: false # Каждый параметр с новой строки
+BreakBeforeBinaryOperators: None # Выравнивание бинарных операций
+BreakBeforeBraces: Attach # Выравнивание скобок
+BreakConstructorInitializersBeforeComma: true # Параметры конструктора на новой строке
+ColumnLimit: 80 # Максимальное количество столбцов
+ConstructorInitializerAllOnOneLineOrOnePerLine: true # Выравнивание наследования
+Cpp11BracedListStyle: true # Стиль скобок C++11
+IndentCaseLabels: true # Табуляяция после case
+KeepEmptyLinesAtTheStartOfBlocks: true # Сохранение пустой строки после начала блока
+Language: Cpp
+MaxEmptyLinesToKeep: 1 # Сохранять одну строку
+NamespaceIndentation: All # Табуляция namespace
+PointerAlignment: Right # * и & справа
+ReflowComments: true # Правильные коментарии
+SortIncludes: true # Сортировка include
+SpaceAfterCStyleCast: false # пробел между (int) a
+SpaceBeforeParens: ControlStatements # Пробел после if
+Standard: Cpp11
+IndentWidth: 4
+TabWidth: 4
+UseTab: ForIndentation
