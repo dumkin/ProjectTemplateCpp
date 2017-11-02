@@ -32,7 +32,7 @@ do
 	echo "Готово"
 
 	echo -n "-- Копирование файлов: "
-	# cp ../sources/FILE FILE
+	cp ../sources/Main.lua Main.lua
 	echo "Готово"
 
 	echo "-- Компиляция: Запуск"

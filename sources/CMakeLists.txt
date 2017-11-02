@@ -15,4 +15,4 @@ LINK_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR}/libraries)
 
 add_executable(${PROJECT_NAME} ${SOURCES})
 
-target_link_libraries(${PROJECT_NAME} pthread)
+target_link_libraries(${PROJECT_NAME} lua53 dl pthread)
