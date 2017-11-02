@@ -1,5 +1,11 @@
 # Depends
 
+### Install lua
+
+```sh
+sudo apt install lua5.3
+```
+
 ### Install Clang
 
 ```sh
