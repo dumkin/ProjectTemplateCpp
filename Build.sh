@@ -28,7 +28,7 @@ while true
 do
 	clear
 	echo -n "-- Применение стилей: "
-	find ../sources/ -name '*.hpp' -or -name '*.cpp' | xargs clang-format-5.0 -i -style=file $1
+	find ../sources/ -name '*.hpp' -or -name '*.cpp' | xargs clang-format -i -style=file $1
 	echo "Готово"
 
 	echo -n "-- Копирование файлов: "

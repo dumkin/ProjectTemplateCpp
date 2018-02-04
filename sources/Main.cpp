@@ -2,18 +2,14 @@
 #include <iostream>
 #include <thread>
 
-#define end << '\n'
-
 profiler debug;
 console window;
 style css;
 
-using namespace std;
-
 void newFunction() {
 	debug.fragmentStart("newFunction");
 
-	cout << "Hello, World" end;
+	std::cout << "Hello, World\n";
 
 	debug.fragmentStop();
 }
@@ -25,7 +21,7 @@ int main() {
 	window.clear();
 	window.setCursorPosition(0, 0);
 
-	thread Thread_newFunction(newFunction);
+	std::thread Thread_newFunction(newFunction);
 	Thread_newFunction.join();
 
 	theme success = {GREEN, DEFAULT, INTENSIVE_NORMAL, UNDERLINE_FALSE};
@@ -34,9 +30,9 @@ int main() {
 
 	css.defaultSet(success);
 
-	cout << css.get() << "status : ok" end;
-	cout << css.get(warning) << "status : warning" end;
-	cout << css.get(error) << "status : error" end;
+	std::cout << css.get() << "status : ok\n";
+	std::cout << css.get(warning) << "status : warning\n";
+	std::cout << css.get(error) << "status : error\n";
 
 	debug.write("status : ok");
 
